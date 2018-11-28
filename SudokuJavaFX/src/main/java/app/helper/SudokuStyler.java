@@ -120,7 +120,14 @@ public class SudokuStyler {
 
 	public static Pane getRedPane() {
 		Pane p = new Pane();
-		String strStyle = "-fx-background-color: #AA0000; ";
+		String strStyle = "-fx-background-color: rgba(255,0,0,0.25); ";
+		p.setStyle(strStyle);
+		return p;
+	}
+	
+	public static Pane getGreenPane() {
+		Pane p = new Pane();
+		String strStyle = "-fx-background-color: rgba(0,255,0,0.25); ";
 		p.setStyle(strStyle);
 		return p;
 	}

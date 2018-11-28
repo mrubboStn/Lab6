@@ -253,7 +253,17 @@ public class Sudoku extends LatinSquare implements Serializable {
 			}
 		}
 	}
-
+	public int getZeroAmount() {
+		int zeros = 0;
+		for (int iRow = 0; iRow < iSize; iRow++) {
+			for (int iCol = 0; iCol < iSize; iCol++) {
+				if (this.getPuzzle()[iRow][iCol] == 0)
+					zeros++;
+			}
+		}
+		return zeros;
+		
+	}
 	/**
 	 * PossibleValuesMultiplier - will return back an integer calculated from the
 	 * possible remaining values
